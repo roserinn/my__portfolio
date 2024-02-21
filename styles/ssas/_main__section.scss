@@ -1,0 +1,151 @@
+.mainSection {
+  background-image: url('../../img/bg/bg.png');
+  background-size: cover;
+  position: relative;
+
+
+  &__cont {
+    width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+
+    img {
+      width: 10px;
+    }
+
+    &__title {
+      font-family: "Playfair Display", serif;
+      letter-spacing: .3rem;
+      font-weight: 400;
+      font-size: 8rem;
+      width: 850px;
+      line-height: 120px;
+      margin-top: 200px;
+      margin-left: 10px;
+      text-shadow: 5px 5px 10px black;
+    }
+
+    &__subtitle {
+      width: 400px;
+      font-weight: 300;
+      font-size: 1.5rem;
+      letter-spacing: .2rem;
+      line-height: 25px;
+      margin-top: 50px;
+      margin-right: 10px;
+      display: flex;
+      align-self: end;
+      text-shadow: 2px 2px 5px black;
+    }
+
+    &__arrow {
+      display: flex;
+      align-self: center;
+      margin: 100px 0;
+
+    }
+
+  }
+}
+
+@include desktop() {
+  .mainSection {
+
+    &__cont {
+      width: 1000px;
+
+      img {
+        width: 10px;
+      }
+
+      &__title {
+        font-size: 6rem;
+        line-height: 100px;
+      }
+
+      &__subtitle {
+        font-size: 1.3rem;
+      }
+
+    }
+  }
+}
+
+@include tablet() {
+  .mainSection {
+
+    &__cont {
+      width: 700px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+
+      img {
+        width: 10px;
+      }
+
+      &__title {
+        width: 700px;
+        margin-top: 180px;
+        text-align: center;
+        font-size: 6rem;
+        line-height: 100px;
+        margin-left: 0px;
+      }
+
+      &__subtitle {
+        margin-top: 20px;
+        text-align: center;
+        font-size: 1.3rem;
+        align-self: center;
+      }
+
+      &__arrow {
+        margin-bottom: 100px;
+
+      }
+    }
+  }
+}
+
+@include mobile() {
+
+  // width: 300px;
+  .mainSection {
+
+    &__cont {
+      width: 350px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+
+      img {
+        width: 10px;
+      }
+
+      &__title {
+        width: 350px;
+        margin-top: 250px;
+        text-align: center;
+        font-size: 2.5rem;
+        line-height: 35px;
+        font-weight: 900;
+      }
+
+      &__subtitle {
+        letter-spacing: .1rem;
+        line-height: 20px;
+        width: 250px;
+        margin-top: 30px;
+        text-align: center;
+        font-size: 1rem;
+        align-self: center;
+      }
+
+      &__arrow {
+        margin: 100px 0;
+      }
+    }
+  }
+}

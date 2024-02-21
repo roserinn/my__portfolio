@@ -1,0 +1,73 @@
+.header {
+  position: absolute;
+  left: 45%;
+  transform: translateX(-45%);
+  z-index: $ui-index-2;
+
+  &__cont {
+    padding-top: 20px;
+    width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    img {
+      width: 40px;
+    }
+
+    &__lang {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      font-family: "Playfair Display", serif;
+      font-weight: 400;
+      font-size: 1.3rem;
+
+      a {
+        color: $white;
+
+        .active {
+          font-weight: 900;
+        }
+
+      }
+    }
+  }
+}
+
+
+@include desktop() {
+  .header {
+
+  
+    &__cont {
+      padding-top: 20px;
+      width: 1000px;
+  
+ 
+    }
+  }
+}
+
+@include tablet() {
+  .header {
+
+  
+    &__cont {
+      padding-top: 15px;
+      width: 700px;
+  
+ 
+    }
+  }
+} 
+
+@include mobile() {
+  .header {
+    &__cont {
+      padding-top: 15px;
+      width: 350px;
+    }
+  }
+}
