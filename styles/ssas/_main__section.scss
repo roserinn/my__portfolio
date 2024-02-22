@@ -1,9 +1,18 @@
 .mainSection {
-  background-image: url('../../img/bg/bg.png');
+  background-image: url('../../img/bg/bg_.png');
   background-size: cover;
+  background-attachment: fixed;
   position: relative;
 
+  &__bottomSmoke {
+    position: absolute;
+    bottom: -29px;
+    height: 280px;
+    width: 100%;
+    z-index: $ui-index-5;
+  }
 
+ 
   &__cont {
     width: 1200px;
     margin: 0 auto;
@@ -21,7 +30,7 @@
       font-size: 8rem;
       width: 850px;
       line-height: 120px;
-      margin-top: 200px;
+      margin-top: 150px;
       margin-left: 10px;
       text-shadow: 5px 5px 10px black;
     }

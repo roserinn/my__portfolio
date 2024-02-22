@@ -1,0 +1,150 @@
+.devMagic {
+  padding: 200px 0;
+  background-image: url('../../img/bg/bg.png');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+
+  &__cont {
+    width: 1200px;
+    margin: 0 auto;
+    color: $white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &__img {
+      canvas {
+        width: 56vmin;
+        height: 55vmin;
+      }
+    }
+
+    &__info {
+      width: 570px;
+
+      h2 {
+        font-family: "Playfair Display", serif;
+        font-size: 3.5rem;
+        font-weight: 900;
+        letter-spacing: .1rem;
+        margin-bottom: 40px;
+      }
+
+      p {
+        width: 440px;
+        margin-bottom: 20px;
+        font-size: 1.1rem;
+
+      }
+    }
+  }
+
+}
+
+@include desktop() {
+  .devMagic {
+
+
+    &__cont {
+      width: 1000px;
+
+      &__img {
+        canvas {
+          width: 56vmin;
+          height: 55vmin;
+        }
+      }
+    }
+  }
+
+
+}
+
+@include tablet() {
+
+  .devMagic {
+    padding: 180px 0;
+
+    &__cont {
+      width: 700px;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+
+      &__img {
+        canvas {
+          width: 40vmin;
+          height: 40vmin;
+        }
+      }
+
+      &__info {
+        width: 570px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        h2 {
+          font-size: 3rem;
+          font-weight: 900;
+          letter-spacing: .1rem;
+          margin-bottom: 20px;
+        }
+
+        p {
+          width: 440px;
+          margin-bottom: 20px;
+          font-size: 1.1rem;
+          text-align: center;
+        }
+      }
+    }
+  }
+
+}
+
+@include mobile() {
+
+  .devMagic {
+    padding: 150px 0;
+
+    &__cont {
+      width: 500px;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+
+      &__img {
+        canvas {
+          width: 70vmin;
+          height: 70vmin;
+          margin-top: 20px;
+        }
+      }
+
+      &__info {
+        width: 350px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        h2 {
+          font-size: 2rem;
+          font-weight: 900;
+          letter-spacing: .1rem;
+          margin-bottom: 20px;
+        }
+
+        p {
+          width: 100%;
+          margin-bottom: 10px;
+          font-size: 1rem;
+        }
+      }
+    }
+  }
+
+}

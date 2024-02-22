@@ -1,3 +1,4 @@
+
 console.clear();
 
 // Get the canvas element from the DOM
@@ -215,99 +216,74 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 
+// import Typed from 'typed.js';
+
+// var typed = new Typed('.firstSlide__cont__text', {
+//   strings: ['&amp; Welcome to the digital playground of a web virtuoso! \n  Dive into a spectacular collection of projects that transform the ordinary into extraordinary.'],
+//   typeSpeed: 50,
+//   smartBackspace: true,
+// });
+
+
+gsap.to(".header__cont", { 
+  y: 20, opacity: 1, duration: 1 });
 
 
 
 
+gsap.from(".mainSection__cont__title", {
+   x: -200, 
+   opacity: 0, 
+   duration: 2,
+   ease: 'back',
+  });
 
 
 
+gsap.from(".mainSection__cont__subtitle", { 
+  delay: .5,
+  opacity: 0, 
+  duration: 1,
+ });
 
 
 
+gsap.to(".mainSection__cont__arrow", { 
+  y: 20, opacity: 1, duration: 1 });
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// var camera, scene, renderer, particles, control;
-// const assetPath = 'https://s3-us-west-2.amazonaws.com/s.cdpn.io/2666677/';
-
-// init(); 
-
-// function init() {
-// const section = document.querySelector('.mainSection');
-
-//     clock = new THREE.Clock();
-
-//     renderer = new THREE.WebGLRenderer();
-//     renderer.setSize( window.innerWidth, window.innerHeight );
-//     section.appendChild( renderer.domElement );
- 
-//     scene = new THREE.Scene();
- 
-//     camera = new THREE.PerspectiveCamera( 50, window.innerWidth / window.innerHeight, 1, 100 );
-//     camera.position.z = 5;
-//     scene.add( camera );
-
-//     light = new THREE.DirectionalLight(0xffffff, 1.0);
-//     light.position.set(-1,0,1);
-//     scene.add(light);
+  const $bigBall = document.querySelector(".cursor__ball--big");
+  const $smallBall = document.querySelector(".cursor__ball--small");
+  const $hoverables = document.querySelectorAll(".hoverable");
   
-//     control = new THREE.OrbitControls( camera, renderer.domElement );
+  // Listeners
+  document.body.addEventListener("mousemove", onMouseMove);
+  for (let i = 0; i < $hoverables.length; i++) {
+    $hoverables[i].addEventListener("mouseenter", onMouseHover);
+    $hoverables[i].addEventListener("mouseleave", onMouseHoverOut);
+  }
   
-//     const tex = new THREE.TextureLoader()
-//       .setPath(assetPath)
-//       .load('smoke_01.png');
-//     const material = new THREE.MeshLambertMaterial({
-//       color: 0xffffff, 
-//       depthWrite: false,
-//       map: tex, 
-//       transparent: true
-//     });
-//     const geometry = new THREE.PlaneGeometry(5,5);
-//     particles = [];
-
-//     const size = 5;
+  // Move the cursor
+  function onMouseMove(e) {
+    TweenMax.to($bigBall, 0.4, {
+      x: e.pageX - 15,
+      y: e.pageY - 15
+    });
+    TweenMax.to($smallBall, 0.1, {
+      x: e.pageX - 5,
+      y: e.pageY - 7
+    });
+  }
   
-//     for (let i=0; i<40; i++) {
-//         const particle = new THREE.Mesh(geometry, material);
-//         particle.position.set(
-//           ( Math.random()-0.5) * size, 
-//           ( Math.random()-0.5) * size, 
-//           ( Math.random()-0.5) * size);
-//         particle.rotation.z = Math.random() * Math.PI * 2;
-//         scene.add(particle);
-//         particles.push(particle);
-//     }
- 
-//     renderer.setAnimationLoop( update );
-// }
- 
-// function update() { 
-//     const dt = clock.getDelta();
-//     if (particles){
-//       particles.forEach( particle => {
-//         const z = particle.rotation.z;
-//         particle.lookAt( camera.position );
-//         particle.rotation.z = z + dt * 0.1;
-//       });
-//     }
-//     renderer.render( scene, camera );
-// }
- 
-
+  // Hover an element
+  function onMouseHover() {
+    TweenMax.to($bigBall, 0.3, {
+      scale: 4
+    });
+  }
+  function onMouseHoverOut() {
+    TweenMax.to($bigBall, 0.3, {
+      scale: 1
+    });
+  }
+  

@@ -1,0 +1,65 @@
+
+.code {
+  background-color: $white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  z-index: $ui-index-4;
+
+  &__bottomSmoke {
+    position: absolute;
+    bottom: -29px;
+    height: 280px;
+    width: 100%;
+    z-index: $ui-index-5;
+  }
+
+  &__cont {
+    width: 800px;
+    color: $black;
+    margin: 300px auto 400px;
+
+    &__text {
+      font-size: 1.5rem;
+      letter-spacing: .1rem;
+      line-height: 30px;
+    }
+  }
+}
+
+@include desktop() {
+
+  .code {
+  
+    &__cont {
+      width: 1000px;
+      margin: 250px auto 350px;
+    }
+  }
+}
+
+@include tablet() {
+
+  .code {
+    &__cont {
+      width: 700px;
+      margin: 250px auto 350px;
+    }
+  }
+}
+
+@include mobile() {
+  .code {
+    &__cont {
+      width: 350px;
+
+      &__text {
+        width: 350px;
+        font-size: 1.2rem;
+        line-height: 20px;
+      }
+    }
+  }
+}

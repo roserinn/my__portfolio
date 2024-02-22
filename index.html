@@ -22,13 +22,26 @@ website developed by
 </head>
 
 <body>
+  <div class="cursor">
+    <div class="cursor__ball cursor__ball--big ">
+      <svg height="30" width="30">
+        <circle cx="15" cy="15" r="12" stroke-width="0"></circle>
+      </svg>
+    </div>
+    
+    <div class="cursor__ball cursor__ball--small">
+      <svg height="10" width="10">
+        <circle cx="5" cy="5" r="4" stroke-width="0"></circle>
+      </svg>
+    </div>
+  </div>
   <header class="header">
     <div class="header__cont">
-      <img src="./img/logo.png" alt="logo" class="header__cont__logo">
+      <img src="./img/logo.png" alt="logo" class="header__cont__logo hoverable">
 
       <div class="header__cont__lang">
-        <a href="#" id="English" class="active header__cont__lang__en ">En</a>
-        <a href="#" id="Ukrainian" class="header__cont__lang__uk">Uk</a>
+        <a href="#" id="English" class="active header__cont__lang__en hoverable">En</a>
+        <a href="#" id="Ukrainian" class="header__cont__lang__uk hoverable">Uk</a>
       </div>
 
     </div>
@@ -36,33 +49,34 @@ website developed by
 
   <main class="wrapper">
     <section class="mainSection">
+
+      <img src="./img/bottom__smoke.png" alt="smoke" class="mainSection__bottomSmoke">
       <div class="mainSection__cont">
-        <h1 class="mainSection__cont__title">
+        <h1 class="mainSection__cont__title hoverable">
           Harmony of <br> Code and Design
         </h1>
-        <h2 class="mainSection__cont__subtitle">
+        <h2 class="mainSection__cont__subtitle hoverable">
           Meet the coding wizard who turns coffee into great websites
         </h2>
-        <img src="./img/arrow__down.png" alt="arrow__down" class="mainSection__cont__arrow">
+        <img src="./img/arrow__down.png" alt="arrow__down" class="mainSection__cont__arrow hoverable">
       </div>
     </section>
 
     <section class="digitalPlayground">
       <img src="./img/top__smoke.png" alt="smoke" class="digitalPlayground__topSmoke">
       <div class="digitalPlayground__cont">
-        <div class="firstSlide">
-          <div class="firstSlide__cont">
-            <p class="firstSlide__cont__text">
-              Welcome to the digital playground of a web virtuoso!
-              Dive into a spectacular collection of projects that transform the ordinary into extraordinary.
+   
+            <p class="digitalPlayground__cont__text">
+              Welcome to the digital playground of a web virtuoso! <br> Dive into a spectacular collection of projects that transform the ordinary into extraordinary.
             </p>
-          </div>
+           
         </div>
+    </section>
 
-        <div class="secondSlide">
-          <div class="secondSlide__cont">
-            <img src="./img/photo.jpg" alt="rina" class="secondSlide__cont__img">
-            <div class="secondSlide__cont__info">
+        <section class="aboutMe">
+          <div class="aboutMe__cont">
+            <img src="./img/photo.jpg" alt="rina" class="aboutMe__cont__img">
+            <div class="aboutMe__cont__info">
               <h2> A Little Byte about Me </h2>
               <p>I'm Rina, a web wizard who works at a high pace! My passion lies in creating mesmerizing websites
                 through the wizardry of programming.
@@ -73,10 +87,11 @@ website developed by
                 every pixel count.</p>
             </div>
           </div>
-        </div>
-        <div class="thirdSlide">
-          <div class="thirdSlide__cont">
-            <div class="thirdSlide__cont__info">
+        </section>
+
+        <section class="devMagic">
+          <div class="devMagic__cont">
+            <div class="devMagic__cont__info">
               <h2>Web Development Magic </h2>
               <p>My web programming skills allow me to create unique and functional websites from scratch.
               </p>
@@ -87,24 +102,24 @@ website developed by
                 the world.</p>
             </div>
 
-            <div class="thirdSlide__cont__img">
+            <div class="devMagic__cont__img">
               <canvas id="scene"></canvas>
             </div>
           </div>
-        </div>
-        <div class="fourthSlide">
+        </section>
 
-          <div class="fourthSlide__cont">
-            <p class="fourthSlide__cont__text">
+        <section class="code">
+
+          <div class="code__cont">
+            <p class="code__cont__text">
               // My code is not just strings, but living organisms brought to life by craftsmanship. //
             </p>
           </div>
-        </div>
+          <img src="./img/bottom__smoke.png" alt="smoke" class="code__bottomSmoke">
+        </section>
       </div>
 
-      <img src="./img/bottom__smoke.png" alt="smoke" class="digitalPlayground__bottomSmoke">
 
-    </section>
 
     <section class="showcase">
       <div class="showcase__cont">
@@ -149,9 +164,13 @@ website developed by
       </div>
     </div>
   </footer>
-
-
   <script type="module" src="./script.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollToPlugin.min.js"></script>
+
+</script>
+
 </body>
 
 </html>
