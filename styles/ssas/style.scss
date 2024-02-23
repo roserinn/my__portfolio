@@ -12,6 +12,10 @@ body {
   cursor: none;
 }
 
+a, button {
+  cursor: none;
+}
+
 body .cursor {
   pointer-events: none;
 }
@@ -32,6 +36,8 @@ body .cursor__ball circle {
   display: flex;
   flex-direction: column;
   margin: 0 auto;
+  // overflow-y: auto;
+  perspective: 10px
 }
 
 
