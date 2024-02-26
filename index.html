@@ -52,10 +52,17 @@ website developed by
   <main class="wrapper">
     <section class="mainSection" data-relative-input="true">
 <!--      <img src="./img/bg/bg_ 2.webp" alt="bg" class="mainSection__bg bg">-->
-      <div id="scene">
-        <img data-depth="0.2" src="./img/bg/layer2top.webp" alt="smoke" class="mainSection__toplayerfirst  layer">
-        <img data-depth="0.4" src="./img/bg/layer2top.webp" alt="smoke" class="mainSection__toplayersecond layer">
-        <img data-depth="0.6" src="./img/bg/layer3top.webp" alt="smoke" class="mainSection__toplayerthird  layer">
+
+      <div class="scene" style="width: 100%; height: 50%; position: relative;">
+        <div data-depth="0.2" class="layer" style="width: 100%; height: 100%;">
+          <img src="./img/bg/layer2top.webp" alt="smoke" class="mainSection__toplayerfirst">
+        </div>
+        <div data-depth="0.4" class="layer" style="width: 100%; height: 100%;">
+          <img  src="./img/bg/layer2top.webp" alt="smoke" class="mainSection__toplayersecond">
+        </div>
+        <div data-depth="0.6" class="layer" style="width: 100%; height: 100%;">
+          <img src="./img/bg/layer3top.webp" alt="smoke" class="mainSection__toplayerthird">
+        </div>
       </div>
       <img src="./img/bottom__smoke.webp" alt="smoke" class="mainSection__bottomSmoke">
 
@@ -66,9 +73,18 @@ website developed by
         <h2 class="mainSection__cont__subtitle title-paralax hoverable">
           Meet the coding wizard who turns coffee into great websites
         </h2>
-        <img src="./img/bg/layer2bottom.webp" alt="smoke" class="mainSection__bottomlayerfirst layer">
-        <img src="./img/bg/layer2bottom.webp" alt="smoke" class="mainSection__bottomlayersecond layer">
-        <img src="./img/bg/layer3bottom.webp" alt="smoke" class="mainSection__bottomlayerthird layer">
+
+      </div>
+      <div class="scene" style="width: 100%; height: 50%; position: relative;">
+        <div data-depth="0.2" class="layer" style="width: 100%; height: 100%;">
+          <img src="./img/bg/layer2bottom.webp" alt="smoke" class="mainSection__bottomlayerfirst" style="position: absolute; bottom: 0; right: 0;">
+        </div>
+        <div data-depth="0.4" class="layer" style="width: 100%; height: 100%;">
+          <img src="./img/bg/layer2bottom.webp" alt="smoke" class="mainSection__bottomlayersecond" style="position: absolute; bottom: 0; right: 0;">
+        </div>
+        <div data-depth="0.6" class="layer" style="width: 100%; height: 100%;">
+          <img src="./img/bg/layer3bottom.webp" alt="smoke" class="mainSection__bottomlayerthird" style="position: absolute; bottom: 0; right: 0;">
+        </div>
       </div>
     </section>
 

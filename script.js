@@ -123,8 +123,10 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-var scene = document.getElementById('scene');
-var parallaxInstance = new Parallax(scene);
+var scene = document.querySelectorAll('.scene');
+scene.forEach(item => {
+  new Parallax(item);
+})
 
 // //layers
 //   let title = document.querySelectorAll('.title-paralax');
