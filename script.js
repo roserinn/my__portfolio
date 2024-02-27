@@ -1,11 +1,3 @@
-const container = document.querySelector('.center');
-
-for(let i = 1; i <= 400; i++) {
-	const div = document.createElement('div');
-  div.setAttribute('class', 'particle');
-  div.setAttribute('style', `--index: ${i}`);
-  container.append(div);
-}
 
 
 //workShowcase 
@@ -97,7 +89,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const $bigBall = document.querySelector(".cursor__ball--big");
   const $smallBall = document.querySelector(".cursor__ball--small");
   const $hoverables = document.querySelectorAll(".hoverable");
-  
+
   // Listeners
   document.body.addEventListener("mousemove", onMouseMove);
   for (let i = 0; i < $hoverables.length; i++) {
@@ -118,7 +110,7 @@ document.addEventListener('DOMContentLoaded', () => {
       y: e.pageY - 7 - scrollY
     });
   }
-  
+
   // Hover an element
   function onMouseHover() {
     gsap.to($bigBall, 0.3, {
@@ -130,35 +122,40 @@ document.addEventListener('DOMContentLoaded', () => {
       scale: 1
     });
   }
-  
-//layers
-  let title = document.querySelectorAll('.title-paralax');
-  window.addEventListener('mousemove', function(e) { 
-      let x = e.clientX / window.innerWidth;
-      let y = e.clientY / window.innerHeight;     
-      for (let i = 0; i <  title.length; i++){
-        title[i].style.transform = 'translate(' + x * 30 + 'px, -' + y * 30 + 'px)';
-      }
-  });
-  
 
-//smoke 
+var scene = document.querySelectorAll('.scene');
+scene.forEach(item => {
+  new Parallax(item);
+})
 
-let layer = document.querySelectorAll('.layer');
-window.addEventListener('mousemove', function(e) { 
-    let x = e.clientX / window.innerWidth;
-    let y = e.clientY / window.innerHeight;     
-    for (let i = 0; i <  layer.length; i++){
-      layer[i].style.transform = 'translate(-' + x * 20 + 'px, -' + y * 20 + 'px)';
-    }
-});
-
-//background 
-let bg = document.querySelectorAll('.bg');
-window.addEventListener('mousemove', function(e) { 
-    let x = e.clientX / window.innerWidth;
-    let y = e.clientY / window.innerHeight;     
-    for (let i = 0; i <  bg.length; i++){
-      bg[i].style.transform = 'translate(-' + x * 10 + 'px, -' + y * 10 + 'px)';
-    }
-});
+// //layers
+//   let title = document.querySelectorAll('.title-paralax');
+//   window.addEventListener('mousemove', function(e) {
+//       let x = e.clientX / window.innerWidth;
+//       let y = e.clientY / window.innerHeight;
+//       for (let i = 0; i <  title.length; i++){
+//         title[i].style.transform = 'translate(' + x * 30 + 'px, -' + y * 30 + 'px)';
+//       }
+//   });
+//
+//
+// //smoke
+//
+// let layer = document.querySelectorAll('.layer');
+// window.addEventListener('mousemove', function(e) {
+//     let x = e.clientX / window.innerWidth;
+//     let y = e.clientY / window.innerHeight;
+//     for (let i = 0; i <  layer.length; i++){
+//       layer[i].style.transform = 'translate(-' + x * 20 + 'px, -' + y * 20 + 'px)';
+//     }
+// });
+//
+// //background
+// let bg = document.querySelectorAll('.bg');
+// window.addEventListener('mousemove', function(e) {
+//     let x = e.clientX / window.innerWidth;
+//     let y = e.clientY / window.innerHeight;
+//     for (let i = 0; i <  bg.length; i++){
+//       bg[i].style.transform = 'translate(-' + x * 10 + 'px, -' + y * 10 + 'px)';
+//     }
+// });

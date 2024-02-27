@@ -1,38 +1,55 @@
 .mainSection {
   position: relative;
   height: 100vh;
+  overflow: hidden;
 
   &__bg {
     width: 100%;
     height: 100%;
-
   }
-  &__toplayerfirst {
+
+  &__layerRight {
     position: absolute;
-    height: 100px;
-    width: 100px;
-    top: 0px;
-    left: 300px;
-    z-index: $ui-index-1;
-    filter: drop-shadow(0 12px 10px black);
+    top: -192px;
+    left: -246px;
+  }
+
+  &__layerLeft {
+    position: absolute;
+    bottom: 1224px;
+    right: -246px;
+  }
+
+  &__cloudRight {
+    position: absolute;
+    bottom: -791px;
+    right: 1205px;
+  }
+
+  &__cloudLeft {
+    position: absolute;
+    bottom: 781px;
+    right: -600px;
+  }
+
+  &__toplayerthird {
+    position: absolute;
+    height: 694px;
+    width: 2000px;
+    top: -409px;
+    left: -50px;
   }
 
   &__toplayersecond {
     position: absolute;
-    height: 250px;
-    top: 200px;
-    right: -50px;
-    z-index: $ui-index-1;
-    filter: drop-shadow(0 12px 10px black);
+    top: -60px;
+    left: 15px;
   }
-  &__toplayerthird {
+
+  &__toplayerfirst {
     position: absolute;
-    height: 250px;
-    width: 1600px;
-    top: -50px;
-   left: -25px;
-    z-index: $ui-index-1;
-    filter: drop-shadow(0 12px 10px rgba(255, 255, 255, 0.384));
+    top: 52px;
+    right: 179px;
   }
 
   &__bottomSmoke {
@@ -40,31 +57,31 @@
     height: 250px;
     width: 100%;
     left: 0;
-    bottom: -70px;
+    bottom: -100px;
     z-index: $ui-index-3;
   }
 
   &__bottomlayerfirst {
+    width: 150px;
     position: absolute;
-    bottom: 300px;
-    left: -50px;
-    z-index: $ui-index-2;
+    bottom: 1600px;
+    left: 50px;
   }
 
   &__bottomlayersecond {
     position: absolute;
-    bottom: -50px;
-    right: 30%;
-    z-index: $ui-index-2;
+    bottom: 1430px;
+    right: 9px;
+    width: 400px;
+    height: 400px;
   }
+
   &__bottomlayerthird {
     position: absolute;
-    height: 250px;
-    bottom: 0px;
+    height: 600px;
+    top: -1060px;
     right: -25px;
-    width: 1600px;
-    z-index: $ui-index-1;
-    filter: drop-shadow(0 12px 10px rgba(255, 255, 255, 0.318));
+    width: 2000px;
   }
 
   &__cont {
@@ -73,147 +90,281 @@
     display: flex;
     flex-direction: column;
 
-
     &__title {
       font-family: "Playfair Display", serif;
       letter-spacing: .3rem;
       font-weight: 400;
       font-size: 7rem;
-      width: 850px;
       line-height: 120px;
-      margin-top: 130px;
-      margin-left: 10px;
-      text-shadow: 0 0 10px #ffffff13, 0 0 20px #ffffff1c, 0 0 30px #ffffff4b, 0 0 40px #ffffff4b, 0 0 70px #ffffff4b, 0 0 80px #ffffff4b, 0 0 100px #ffffff4b, 0 0 150px #ffffff4b; 
+      text-shadow: 0 0 10px #ffffff13, 0 0 20px #ffffff1c, 0 0 30px #ffffff4b, 0 0 40px #ffffff4b, 0 0 70px #ffffff4b, 0 0 80px #ffffff4b, 0 0 100px #ffffff4b, 0 0 150px #ffffff4b;
       position: absolute;
-      z-index: $ui-index-2;
-      top: 0;
-      // animation: neon 3s ease-in-out infinite alternate;
+      top: -556px;
+      left: 200px;
     }
 
     &__subtitle {
-      width: 400px;
       font-weight: 300;
       font-size: 1.2rem;
       letter-spacing: .2rem;
       line-height: 25px;
-      margin-right: 10px;
       display: flex;
-      align-self: end;
-      text-shadow: 0 0 10px #ffffff13, 0 0 20px #ffffff1c, 0 0 30px #ffffff4b; 
+      text-shadow: 0 0 10px #ffffff13, 0 0 20px #ffffff1c, 0 0 30px #ffffff4b;
       position: absolute;
-      bottom: 280px;
+      bottom: 928px;
+      right: 332px;
     }
   }
-  // @keyframes neon {
-  //   from {
-  //     text-shadow: 0 0 10px #ffffff13, 0 0 20px #ffffff1c, 0 0 30px #ffffff4b, 0 0 40px #ffffff4b, 0 0 70px #ffffff4b, 0 0 80px #ffffff4b, 0 0 100px #ffffff4b, 0 0 150px #ffffff4b; 
-    
-  //   }
-  //   to {
-  //     text-shadow: 0 0 5px #ffffff00, 0 0 10px #ffffff0b, 0 0 15px #ffffff4b, 0 0 20px #ffffff4b, 0 0 35px #ffffff4b, 0 0 40px #ffffff4b, 0 0 50px #ffffff4b, 0 0 75px #ffffff4b; 
-    
-  //   }
-  // }
-}
 
+  .scene {
+    width: 100%;
+    height: 100%;
+    position: relative;
+
+    .layer {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+}
 
 @include desktop() {
   .mainSection {
+    &__layerRight {
+      top: -144px;
+      left: -246px;
+    }
+
+    &__layerLeft {
+      bottom: 1224px;
+      right: -273px;
+    }
+
+    &__cloudRight {
+      position: absolute;
+      bottom: -248px;
+      right: 886px;
+    }
+
+    &__cloudLeft {
+      bottom: 781px;
+      right: -567px;
+    }
+
+    &__toplayerthird {
+      top: -409px;
+      left: -50px;
+    }
+
+    &__toplayersecond {
+      top: -96px;
+      left: -17px;
+    }
+
+    &__toplayerfirst {
+      position: absolute;
+      top: 62px;
+      right: 81px;
+    }
+
+    &__bottomlayerfirst {
+      bottom: 1508px;
+      left: 130px;
+    }
+
+    &__bottomlayersecond {
+      width: 200px;
+      height: 200px;
+      bottom: 1430px;
+      right: 9px;
+    }
+
+    &__bottomlayerthird {
+      position: absolute;
+      height: 600px;
+      top: -996px;
+      right: -261px;
+      width: 2000px;
+    }
 
     &__cont {
-      width: 1000px;
-
-      img {
-        width: 10px;
-      }
+      width: 1200px;
 
       &__title {
         font-size: 6rem;
-        line-height: 100px;
+        top: -587px;
+        left: 156px;
       }
 
       &__subtitle {
-        font-size: 1.3rem;
+        font-size: 1.2rem;
+        letter-spacing: .2rem;
+        bottom: 974px;
+        right: 154px;
       }
-
     }
+
   }
 }
 
 @include tablet() {
   .mainSection {
+    &__layerRight {
+      top: -144px;
+      left: -246px;
+    }
+
+    &__layerLeft {
+      bottom: 1224px;
+      right: -273px;
+    }
+
+    &__cloudRight {
+      position: absolute;
+      bottom: -172px;
+      right: 645px;
+    }
+
+    &__cloudLeft {
+      bottom: 790px;
+      right: -571px;
+    }
+
+
+    &__toplayerthird {
+      top: -385px;
+      left: -250px;
+    }
+
+    &__toplayersecond {
+      top: -52px;
+      left: -68px;
+    }
+
+    &__toplayerfirst {
+      top: 84px;
+      left: 561px;
+      width: 100px;
+      height: 100px;
+    }
+
+    &__bottomlayerfirst {
+      bottom: 1508px;
+      left: 130px;
+    }
+
+    &__bottomlayersecond {
+      width: 200px;
+      height: 200px;
+      bottom: 1430px;
+      right: 9px;
+    }
+
+    &__bottomlayerthird {
+      position: absolute;
+      height: 600px;
+      top: -996px;
+      right: -261px;
+      width: 2000px;
+    }
 
     &__cont {
       width: 700px;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-
-      img {
-        width: 10px;
-      }
 
       &__title {
-        width: 700px;
-        margin-top: 180px;
+        font-size: 5rem;
+        line-height: 80px;
+        top: -545px;
+        left: 105px;
         text-align: center;
-        font-size: 6rem;
-        line-height: 100px;
-        margin-left: 0px;
       }
 
       &__subtitle {
-        margin-top: 20px;
+        font-size: 1.1rem;
+        letter-spacing: .2rem;
+        bottom: 1000px;
+        right: 32%;
         text-align: center;
-        font-size: 1.3rem;
-        align-self: center;
-      }
-
-      &__arrow {
-        margin-bottom: 100px;
-
       }
     }
+
   }
 }
 
 @include mobile() {
-
-  // width: 300px;
   .mainSection {
+    &__layerRight {
+      top: -144px;
+      left: -246px;
+    }
+
+    &__layerLeft {
+      bottom: 1224px;
+      right: -360px;
+    }
+
+    &__cloudRight {
+      bottom: -172px;
+      right: 255px;
+    }
+
+    &__cloudLeft {
+      bottom: 790px;
+      right: -638px;
+    }
+
+
+    &__toplayerthird {
+      top: -385px;
+      left: -250px;
+    }
+
+    &__toplayersecond {
+      top: -52px;
+      left: -68px;
+    }
+
+    &__toplayerfirst {
+      top: 84px;
+      left: 561px;
+      width: 100px;
+      height: 100px;
+    }
+
+    &__bottomlayerfirst {
+      bottom: 1467px;
+      left: 32px;
+    }
+
+    &__bottomlayersecond {
+      bottom: 1501px;
+      right: 9px;
+    }
+
+    &__bottomlayerthird {
+      position: absolute;
+      height: 600px;
+      top: -1043px;
+      right: -261px;
+      width: 2000px;
+    }
 
     &__cont {
       width: 350px;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-
-      img {
-        width: 10px;
-      }
 
       &__title {
-        width: 350px;
-        margin-top: 250px;
-        text-align: center;
-        font-size: 2.5rem;
-        line-height: 35px;
-        font-weight: 900;
+        font-size: 3.5rem;
+        line-height: 60px;
+        top: -551px;
+        left: 33px;
       }
 
       &__subtitle {
-        letter-spacing: .1rem;
-        line-height: 20px;
-        width: 250px;
-        margin-top: 30px;
-        text-align: center;
         font-size: 1rem;
-        align-self: center;
-      }
-
-      &__arrow {
-        margin: 100px 0;
+        bottom: 1081px;
+        right: 84px;
       }
     }
+
   }
 }
