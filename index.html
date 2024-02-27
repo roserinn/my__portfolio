@@ -51,24 +51,77 @@ website developed by
 
   <main class="wrapper">
     <section class="mainSection" data-relative-input="true">
-      <img src="./img/bg/bg_ 2.webp" alt="bg" class="mainSection__bg bg">
-      <img src="./img/bg/layer2top.webp" alt="smoke" class="mainSection__toplayerfirst  layer">
-      <img src="./img/bg/layer2top.webp" alt="smoke" class="mainSection__toplayersecond layer">
-      <img src="./img/bg/layer3top.webp" alt="smoke" class="mainSection__toplayerthird  layer">
-      <img src="./img/bottom__smoke.webp" alt="smoke" class="mainSection__bottomSmoke">
+      <!--      <img src="./img/bg/bg_ 2.webp" alt="bg" class="mainSection__bg bg">-->
+      <div class="scene">
+          <div data-depth="0.1" class="layer" style="width: 100%;">
+              <img src="./img/bg/bg__2.webp" alt="bg" class="mainSection__bg">
+          </div>
+          <div data-depth="0.2" class="layer" style="width: 100%;  height: 100%;">
+              <img src="./img/bg/layer3left.webp" alt="layer" class="mainSection__layerRight">
+          </div>
+          <div data-depth="0.3" class="layer" style="width: 100%;  height: 100%;">
+              <img src="./img/bg/layer3left.webp" alt="layer" class="mainSection__layerRight">
+          </div>
+         
+          <div data-depth="0.3" class="layer" style="width: 100%; height: 100%;">
+              <img src="./img/bg/layer3top.webp" alt="smoke" class="mainSection__toplayerthird">
+          </div>
+          <div data-depth="0.5" class="layer" style="width: 100%; height: 100%;">
+              <img src="./img/bg/layer3top.webp" alt="smoke" class="mainSection__toplayerthird">
+          </div>
+           <div data-depth="0.5" class="layer" style="width: 100%;  height: 100%;">
+              <img src="./img/bg/cloudleft.webp" alt="layer" class="mainSection__cloudRight">
+          </div>
 
-      <div class="mainSection__cont">
-        <h1 class="mainSection__cont__title title-paralax hoverable">
-          Harmony of <br> Code and Design
-        </h1>
-        <h2 class="mainSection__cont__subtitle title-paralax hoverable">
-          Meet the coding wizard who turns coffee into great websites
-        </h2>
-        <img src="./img/bg/layer2bottom.webp" alt="smoke" class="mainSection__bottomlayerfirst layer">
-        <img src="./img/bg/layer2bottom.webp" alt="smoke" class="mainSection__bottomlayersecond layer">
-        <img src="./img/bg/layer3bottom.webp" alt="smoke" class="mainSection__bottomlayerthird layer">
+          <div data-depth="0.6" class="layer" style="width: 100%; height: 100%;">
+              <img src="./img/bg/layer2top.webp" alt="smoke" class="mainSection__toplayersecond">
+          </div>
+          <div data-depth="0.6" class="layer" style="width: 100%; height: 100%;">
+              <img src="./img/bg/layer2top.webp" alt="smoke" class="mainSection__toplayerfirst">
+          </div>
       </div>
-    </section>
+      <img src="./img/bottom__smoke.webp" alt="smoke" class="mainSection__bottomSmoke">
+      <div class="mainSection__cont scene">
+          <div data-depth="0.2" class="layer" style="width: 100%; height: 100%;">
+              <h1 class="mainSection__cont__title hoverable">
+                  Harmony of <br> Code and Design
+              </h1>
+          </div>
+          <div data-depth="0.2" class="mainSection__cont__subtitle layer" class="layer"
+              style="width: 100%; height: 100%;">
+              <h2 class="mainSection__cont__subtitle  hoverable">
+                  Meet the coding wizard  who turns<br> coffee into great websites
+              </h2>
+          </div>
+      </div>
+      <div class="scene">
+          <div data-depth="0.2" class="layer" style="width: 100%;  height: 100%;">
+              <img src="./img/bg/layer3right.webp" alt="layer" class="mainSection__layerLeft">
+          </div>
+          <div data-depth="0.3" class="layer" style="width: 100%;  height: 100%;">
+              <img src="./img/bg/layer3right.webp" alt="layer" class="mainSection__layerLeft">
+          </div>
+          <div data-depth="0.4" class="layer" style="width: 100%; height: 100%;">
+              <img src="./img/bg/layer3bottom.webp" alt="smoke" class="mainSection__bottomlayerthird">
+          </div>
+          <div data-depth="0.4" class="layer" style="width: 100%; height: 100%;">
+              <img src="./img/bg/layer3bottom.webp" alt="smoke" class="mainSection__bottomlayerthird">
+          </div>
+          <div data-depth="0.5" class="layer" style="width: 100%;  height: 100%;">
+            <img src="./img/bg/cloudright.webp" alt="layer" class="mainSection__cloudLeft">
+        </div>
+          <div data-depth="0.6" class="layer" style="width: 100%; height: 100%;">
+              <img src="./img/bg/layer2bottom.webp" alt="smoke" class="mainSection__bottomlayerfirst"
+                  style="position: absolute;">
+          </div>
+          <div data-depth="0.6" class="layer" style="width: 100%; height: 100%;">
+              <img src="./img/bg/layer2bottom.webp" alt="smoke" class="mainSection__bottomlayersecond"
+                  style="position: absolute;">
+          </div>
+      </div>
+  </section>
+  
+  
 
     <section class="digitalPlayground">
       <img src="./img/top__smoke.webp" alt="smoke" class="digitalPlayground__topSmoke ">
@@ -78,7 +131,6 @@ website developed by
           Welcome to the digital playground of a web virtuoso! <br> Dive into a spectacular collection of projects that
           transform the ordinary into extraordinary.
         </p>
-
       </div>
     </section>
 
@@ -173,10 +225,11 @@ website developed by
       </div>
     </div>
   </footer>
-  <script type="module" src="./script.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollToPlugin.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
+  <script type="module" src="./script.js"></script>
 </body>
 
 </html>
