@@ -7,13 +7,13 @@
 body {
   background-color: #000000;
   font-family: "Overpass Mono", monospace;
-  // cursor: none;
+  cursor: none;
   position: relative;
 }
 
-// a, button {
-//   cursor: none;
-// }
+a, button {
+  cursor: none;
+}
 
 body .cursor {
   pointer-events: none;

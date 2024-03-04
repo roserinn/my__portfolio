@@ -86,7 +86,12 @@ h6 {
 body {
   background-color: #000000;
   font-family: "Overpass Mono", monospace;
+  cursor: none;
   position: relative;
+}
+
+a, button {
+  cursor: none;
 }
 
 body .cursor {
