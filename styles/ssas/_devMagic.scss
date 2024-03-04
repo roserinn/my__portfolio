@@ -1,5 +1,5 @@
 .devMagic {
-  padding: 200px 0;
+  padding: 250px 0;
   background-image: url('../../img/bg/bg.webp');
   background-size: cover;
   background-position: center;
@@ -40,7 +40,7 @@
 }
 
 .particle {
-
+  
   --angle: (5 * var(--index));
   --radius: 30;
   --x: calc(sin(var(--angle)) * var(--radius) * 1vmin);
@@ -102,7 +102,6 @@
   }
 
   .particle {
-
     --radius: 25;
     right: 200px;
  
@@ -155,14 +154,11 @@
 
   
   .particle {
-
     --radius: 27;
     top: -170px;
     right: 50%;
  
   }
-
-
 }
 
 @include mobile() {
@@ -171,7 +167,7 @@
     padding: 150px 0;
 
     &__cont {
-      width: 500px;
+      width: 400px;
       display: flex;
       justify-content: center;
       flex-direction: column;
@@ -192,7 +188,7 @@
         align-items: center;
 
         h2 {
-          font-size: 2rem;
+          font-size: 1.7rem;
           font-weight: 900;
           letter-spacing: .1rem;
           margin-bottom: 20px;

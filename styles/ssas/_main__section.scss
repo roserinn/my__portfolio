@@ -2,19 +2,20 @@
   position: relative;
   height: 100vh;
   overflow: hidden;
+  color: $white;
 
   &__bg {
     width: 100%;
-    height: 100%;
+    height: 100%; 
   }
 
   &__layerRight {
     position: absolute;
     top: -192px;
-    left: -246px;
+    left: -246px; 
   }
 
-  &__layerLeft {
+  &__layerLeft { 
     position: absolute;
     bottom: 1224px;
     right: -246px;
@@ -23,7 +24,7 @@
   &__cloudRight {
     position: absolute;
     bottom: -791px;
-    right: 1205px;
+    right: 1164px;
   }
 
   &__cloudLeft {
@@ -293,6 +294,11 @@
 
 @include mobile() {
   .mainSection {
+    &__bg {
+      object-fit: cover;
+    }
+  
+
     &__layerRight {
       top: -144px;
       left: -246px;

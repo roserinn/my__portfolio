@@ -24,12 +24,10 @@
       font-weight: 400;
       font-size: 1.3rem;
 
-      a {
+      button {
         color: $white;
-
-        .active {
-          font-weight: 900;
-        }
+        font-size: 1.2rem;
+        background-color: transparent;
 
       }
     }
@@ -40,12 +38,12 @@
 @include desktop() {
   .header {
 
-  
+
     &__cont {
       padding-top: 20px;
       width: 1000px;
-  
- 
+
+
     }
   }
 }
@@ -53,15 +51,15 @@
 @include tablet() {
   .header {
 
-  
+
     &__cont {
       padding-top: 15px;
       width: 700px;
-  
- 
+
+
     }
   }
-} 
+}
 
 @include mobile() {
   .header {

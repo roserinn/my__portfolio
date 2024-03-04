@@ -1,6 +1,8 @@
 .footer {
   background-color: $black;
-padding: 50px;
+  padding: 50px;
+  color: $white;
+
   &__cont {
     width: 1200px;
     margin: 50px auto;
@@ -38,70 +40,73 @@ padding: 50px;
 
 @include desktop() {
 
-.footer {
-  padding: 50px;
+  .footer {
+    padding: 50px;
+
     &__cont {
       width: 1000px;
     }
   }
-  
+
 }
 
 @include tablet() {
   .footer {
     padding: 0px;
-      &__cont {
-        width: 700px;
-        margin: 50px auto;
-    
-        &__socialNetworks {
-          margin-bottom: 100px;
-          gap: 70px;
-    
-          a {
-    
-            img {
-              width: 30px;
-            }
-          }
-        }
-    
-        &__copyright {
-    
-          small {
-            font-size: .7rem;
+
+    &__cont {
+      width: 700px;
+      margin: 50px auto;
+
+      &__socialNetworks {
+        margin-bottom: 100px;
+        gap: 70px;
+
+        a {
+
+          img {
+            width: 30px;
           }
         }
       }
+
+      &__copyright {
+
+        small {
+          font-size: .7rem;
+        }
+      }
     }
+  }
 }
 
 @include mobile() {
 
   .footer {
     padding: 0px;
-      &__cont {
-        width: 350px;
-        margin: 50px auto;
-    
-        &__socialNetworks {
-          margin-bottom: 100px;
-          gap: 50px;
-    
-          a {
-    
-            img {
-              width: 20px;
-            }
-          }
-        }
-    
-        &__copyright {
-    
-          small {
-            font-size: .6rem;
+
+    &__cont {
+      width: 350px;
+      margin: 50px auto;
+
+      &__socialNetworks {
+        margin-bottom: 100px;
+        gap: 50px;
+
+        a {
+
+          img {
+            width: 20px;
           }
         }
       }
+
+      &__copyright {
+
+        small {
+          font-size: .6rem;
+        }
+      }
     }
+  }
 }

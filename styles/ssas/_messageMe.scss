@@ -1,10 +1,10 @@
 .messageMe {
   position: relative;
   background-color: $white;
-
+padding-top: 400px;
   &__topSmoke {
     position: absolute;
-    top: -100px;
+    top: 0px;
     width: 100%;
     z-index: $ui-index-5;
   }
@@ -17,11 +17,11 @@
 
   &__cont {
     width: 750px;
-    margin: 430px auto 100px;
+    margin: 0 auto;
     display: flex;
-    flex-direction: column;
+    flex-direction: column;  
     justify-content: center;
-    align-items: center;
+    align-items: center; 
 
     h2 {
       text-align: center;
@@ -42,11 +42,11 @@
       color: $black
     }
 
-    button {
+    a {
       background-color: $black;
       color: $white;
       padding: 15px 50px;
-
+      margin-bottom: 50px;
     }
   }
 }
@@ -54,6 +54,7 @@
 @include desktop() {
 
   .messageMe {
+    padding-top: 350px;
     &__cont {
       width: 750px;
     }
@@ -63,6 +64,7 @@
 @include tablet() {
 
   .messageMe {
+    padding-top: 300px;
     &__bottomSmoke {
       height: 200px;
       width: 100%;
@@ -70,7 +72,6 @@
     }
     &__cont {
       width: 600px;
-      margin: 300px auto 100px;
   
       h2 {
         font-size: 1.8rem;
@@ -88,6 +89,7 @@
 @include mobile() {
 
   .messageMe {
+    padding-top: 200px;
     &__bottomSmoke {
       height: 180px;
       width: 100%;
@@ -96,7 +98,6 @@
   
     &__cont {
       width: 350px;
-      margin: 200px auto 100px;
   
       h2 {
         font-size: 1.5rem;
