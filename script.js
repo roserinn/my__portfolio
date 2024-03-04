@@ -118,10 +118,12 @@ const cardsArray = [
 
 const cardRow = document.querySelector('.showcase__cont__cards');
 document.addEventListener('DOMContentLoaded', () => {
-  createCards(cardsArray, cardRow);
+  createCards(cardsArray, cardRow, language);
 });
 
-function createCards(array, parent) {
+function createCards(array, parent, lang) {
+  parent.replaceChildren();
+
   array.forEach(card => {
     const cardElement = document.createElement('div');
     cardElement.classList.add('showcase__cont__cards__card');
@@ -140,10 +142,10 @@ function createCards(array, parent) {
     cardTitle.innerText = card.cardTitle;
 
     const cardText = document.createElement('p');
-    cardText.innerText = language === 'ua' ? card.cardTextUa : card.cardText;
+    cardText.innerText = lang === 'ua' ? card.cardTextUa : card.cardText;
 
     const cardLink = document.createElement('a');
-    cardLink.innerText = language === 'ua' ? card.buttonTextUa : 'OPEN';
+    cardLink.innerText = lang === 'ua' ? card.buttonTextUa : 'OPEN';
     cardLink.href = card.cardLink;
     cardLink.target = '_blank';
     div.appendChild(cardTitle);
@@ -283,8 +285,17 @@ function isElementInViewport(el) {
   );
 }
 
-function startTypedWhenVisible(typedElement, text) {
-  if (!typedElement || !isElementInViewport(typedElement) || typedElement._typedInitialized) return;
+function startTypedWhenVisible(typedElement, text, changeLang) {
+
+  if (changeLang) {
+    const typed = new Typed(typedElement, {
+      strings: [text],
+      typeSpeed: 20,
+      showCursor: false
+    });
+  }
+
+  if (!typedElement || !isElementInViewport(typedElement) || typedElement._typedInitialized || changeLang) return;
 
   const typed = new Typed(typedElement, {
     strings: [text],
@@ -296,43 +307,41 @@ function startTypedWhenVisible(typedElement, text) {
   window.removeEventListener('scroll', checkVisibility);
 }
 
-function checkVisibility(language) {
+function checkVisibility(language, changeLang) {
   const typedElement1 = document.querySelector('.digitalPlayground__cont__text');
   const typedElement2 = document.querySelector('.code__cont__text');
-  
+
   const text1 = (language === 'ua') ? 'Ласкаво просимо на цифровий майданчик веб-віртуоза! Пориньте у вражаючу колекцію проектів, які перетворюють звичайне на надзвичайне.' : 'Welcome to the digital playground of a web virtuoso! \n Dive into a spectacular collection of projects that transform the ordinary into extraordinary.';
   
   const text2 = (language === 'ua') ? '// Мій код - це не просто рядки, а живі організми, що оживають завдяки майстерності. //' : '// My code is not just strings, but living organisms brought to life by craftsmanship. //';
 
-  startTypedWhenVisible(typedElement1, text1);
-  startTypedWhenVisible(typedElement2, text2);
+  startTypedWhenVisible(typedElement1, text1, changeLang);
+  startTypedWhenVisible(typedElement2, text2, changeLang);
 }
 
 window.addEventListener('scroll', function() {
   requestAnimationFrame(() => {
-    checkVisibility('ua'); 
+    checkVisibility(language, false);
   });
 });
-
-checkVisibility('en'); 
 
 //language switcher
 document.querySelector('.header__cont__lang__ua').addEventListener('click', () => {
   language = 'ua';
   localStorage.setItem('language', language);
   changeText();
-  checkVisibility('ua');
+  checkVisibility(language, true);
   //Туть
-  createCards(cardsArray, cardRow);
+  createCards(cardsArray, cardRow, language);
 });
 
 document.querySelector('.header__cont__lang__en').addEventListener('click', () => {
   language = 'en';
   localStorage.setItem('language', language); 
   changeText();
-  checkVisibility('en');
+  checkVisibility(language, true);
   //Туть
-  createCards(cardsArray, cardRow);
+  createCards(cardsArray, cardRow, language);
 });
 
 
