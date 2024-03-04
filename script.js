@@ -227,7 +227,6 @@ ScrollTrigger.create({
   trigger: ".aboutMe__cont",
   start: 'top 130%',
   end: 'bottom 100%',
-  markers: true,
   onEnter: () => {
     animateElements(".aboutMe__cont__img", { delay: .7, opacity: 0, duration: 1, y: 100, ease: "back" });
     animateElements(".aboutMe__cont__info", { delay: .7, opacity: 0, duration: 1, x: 100, ease: "back"});
@@ -237,8 +236,8 @@ ScrollTrigger.create({
 
 //devMagic section
 ScrollTrigger.create({
-  trigger: ".devMagic",
-  start: 'top 80%',
+  trigger: ".devMagic__cont__info",
+  start: 'top 120%',
   end: 'bottom 100%',
   onEnter: () => {
     animateElements(".devMagic__cont__img", { delay: .7, opacity: 0, duration: 1, y: -100, ease: "back" });
