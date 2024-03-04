@@ -17,6 +17,7 @@
     &__info {
       width: 520px;
 
+
       h2 {
         font-family: "Playfair Display", serif;
         font-size: 3.5rem;
@@ -86,7 +87,7 @@
   .aboutMe {
 
     &__cont {
-      width: 350px;
+      width: 325px;
       display: flex;
       justify-content: center;
       flex-direction: column;
@@ -99,7 +100,7 @@
       }
 
       &__info {
-        width: 350px;
+        width: 325px;
         display: flex;
         flex-direction: column;
         align-items: center;

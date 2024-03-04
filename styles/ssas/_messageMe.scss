@@ -4,7 +4,7 @@
 padding-top: 400px;
   &__topSmoke {
     position: absolute;
-    top: 0px;
+    top: -10px;
     width: 100%;
     z-index: $ui-index-5;
   }
@@ -97,15 +97,15 @@ padding-top: 400px;
     }
   
     &__cont {
-      width: 350px;
+      width: 325px;
   
       h2 {
-        font-size: 1.5rem;
+        font-size: 1rem;
   
       }
   
       span {
-        font-size: 1.5rem;
+        font-size: 1rem;
       }
 
     }

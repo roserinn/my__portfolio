@@ -218,15 +218,16 @@ animateElements(".mainSection__bottomlayerthird", { delay: 7, y: 300, duration: 
 animateElements(".mainSection__cloudRight", { delay: 7.5, x: -300, duration: 2 });
 animateElements(".mainSection__cloudLeft", { delay: 7.5, x: 300, duration: 2 });
 animateElements(".sixth", { delay: 7.6, opacity: 0, duration: 2, stagger: 0.2 });
-animateElements(".mainSection__cont__title", { delay: 8.8, opacity: 0, duration: 2.5, x: 300 });
-animateElements(".mainSection__cont__subtitle", { delay: 8.8, opacity: 0, duration: 2.5, x: -300 });
-animateElements(".header__cont", { delay: 9.2, opacity: 0, duration: 2, y: -50, });
+animateElements(".mainSection__cont__title", { delay: 9, opacity: 0, duration: 2.5, x: 300 });
+animateElements(".mainSection__cont__subtitle", { delay: 9, opacity: 0, duration: 2.5, x: -300 });
+animateElements(".header__cont", { delay: 9.6, opacity: 0, duration: 2, y: -50, });
 
 //about me section 
 ScrollTrigger.create({
   trigger: ".aboutMe__cont",
-  start: 'top 100%',
+  start: 'top 130%',
   end: 'bottom 100%',
+  markers: true,
   onEnter: () => {
     animateElements(".aboutMe__cont__img", { delay: .7, opacity: 0, duration: 1, y: 100, ease: "back" });
     animateElements(".aboutMe__cont__info", { delay: .7, opacity: 0, duration: 1, x: 100, ease: "back"});
@@ -237,7 +238,7 @@ ScrollTrigger.create({
 //devMagic section
 ScrollTrigger.create({
   trigger: ".devMagic",
-  start: 'top 100%',
+  start: 'top 80%',
   end: 'bottom 100%',
   onEnter: () => {
     animateElements(".devMagic__cont__img", { delay: .7, opacity: 0, duration: 1, y: -100, ease: "back" });

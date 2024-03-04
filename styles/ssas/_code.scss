@@ -54,12 +54,12 @@
 @include mobile() {
   .code {
     &__cont {
-      width: 350px;
+      width: 325px;
 
       &__text {
-        width: 350px;
-        font-size: 1.2rem;
-        line-height: 20px;
+        width: 325px;
+        font-size: 1rem;
+        line-height: 16px;
       }
     }
   }

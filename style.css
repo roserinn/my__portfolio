@@ -150,7 +150,7 @@ body .cursor__ball circle {
 
 .preloader_inner {
   color: white;
-  font-size: 3rem;
+  font-size: 2.7rem;
   letter-spacing: 0.2rem;
 }
 
@@ -161,8 +161,8 @@ body .cursor__ball circle {
 }
 
 .glowing-circle {
-  width: 300px;
-  height: 300px;
+  width: 250px;
+  height: 250px;
   border-radius: 50%;
   border: 2px solid white;
   box-shadow: 0 0 10px white, 0 0 20px white, 0 0 30px white, 0 0 40px white, 0 0 50px white, 0 0 60px white, 0 0 70px rgba(255, 255, 255, 0.595), 0 0 100px rgba(255, 255, 255, 0.697), 0 0 120px rgba(255, 255, 255, 0.731);
@@ -174,10 +174,15 @@ body .cursor__ball circle {
     box-shadow: 0 0 10px rgba(255, 255, 255, 0.401), 0 0 20px rgba(255, 255, 255, 0.449), 0 0 30px rgba(255, 255, 255, 0.408);
   }
   50% {
-    box-shadow: 0 0 20px rgba(255, 255, 255, 0.688), 0 0 30px rgba(255, 255, 255, 0.64), 0 0 40px rgba(255, 255, 255, 0.654), 0 0 50px rgba(255, 255, 255, 0.674), 0 0 70px rgba(255, 255, 255, 0.595), 0 0 100px rgba(255, 255, 255, 0.697), 0 0 120px rgba(255, 255, 255, 0.731);
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.688), 0 0 30px rgba(255, 255, 255, 0.64), 0 0 40px rgba(255, 255, 255, 0.654), 0 0 50px rgba(255, 255, 255, 0.674);
   }
   100% {
     box-shadow: 0 0 10px rgba(255, 255, 255, 0.496), 0 0 20px rgba(255, 255, 255, 0.435), 0 0 30px rgba(255, 255, 255, 0.476);
+  }
+}
+@media (max-width: 1000px) {
+  .cursor {
+    display: none;
   }
 }
 .header {
@@ -226,7 +231,7 @@ body .cursor__ball circle {
 @media (max-width: 700px) {
   .header__cont {
     padding-top: 15px;
-    width: 350px;
+    width: 300px;
   }
 }
 .wrapper {
@@ -315,6 +320,9 @@ body .cursor__ball circle {
   margin: 0 auto;
   display: flex;
   flex-direction: column;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 .mainSection__cont__title {
   font-family: "Playfair Display", serif;
@@ -474,7 +482,7 @@ body .cursor__ball circle {
     font-size: 1.1rem;
     letter-spacing: 0.2rem;
     bottom: 1000px;
-    right: 32%;
+    right: 100px;
     text-align: center;
   }
 }
@@ -489,15 +497,15 @@ body .cursor__ball circle {
   }
   .mainSection__layerLeft {
     bottom: 1224px;
-    right: -360px;
+    right: -373px;
   }
   .mainSection__cloudRight {
     bottom: -172px;
     right: 255px;
   }
   .mainSection__cloudLeft {
-    bottom: 790px;
-    right: -638px;
+    bottom: 744px;
+    right: -622px;
   }
   .mainSection__toplayerthird {
     top: -385px;
@@ -509,17 +517,17 @@ body .cursor__ball circle {
   }
   .mainSection__toplayerfirst {
     top: 84px;
-    left: 561px;
+    left: 270px;
     width: 100px;
     height: 100px;
   }
   .mainSection__bottomlayerfirst {
-    bottom: 1467px;
-    left: 32px;
+    bottom: 1428px;
+    left: -21px;
   }
   .mainSection__bottomlayersecond {
-    bottom: 1501px;
-    right: 9px;
+    bottom: 1478px;
+    right: -79px;
   }
   .mainSection__bottomlayerthird {
     position: absolute;
@@ -529,18 +537,22 @@ body .cursor__ball circle {
     width: 2000px;
   }
   .mainSection__cont {
-    width: 350px;
+    width: 325px;
   }
   .mainSection__cont__title {
-    font-size: 3.5rem;
-    line-height: 60px;
-    top: -551px;
-    left: 33px;
+    font-size: 2.8rem;
+    font-weight: bold;
+    letter-spacing: 0;
+    line-height: 50px;
+    top: -496px;
+    left: 48px;
   }
   .mainSection__cont__subtitle {
-    font-size: 1rem;
-    bottom: 1081px;
-    right: 84px;
+    font-size: 0.9rem;
+    bottom: 1000px;
+    right: 59px;
+    letter-spacing: 0;
+    line-height: 20px;
   }
 }
 .digitalPlayground {
@@ -598,12 +610,16 @@ body .cursor__ball circle {
   }
 }
 @media (max-width: 700px) {
+  .digitalPlayground {
+    padding: 100px 0;
+    height: 100vh;
+  }
   .digitalPlayground__topSmoke {
     height: 100px;
     width: 100%;
   }
   .digitalPlayground__cont {
-    width: 350px;
+    width: 325px;
   }
   .digitalPlayground__cont__text {
     font-size: 1.1rem;
@@ -673,7 +689,7 @@ body .cursor__ball circle {
 }
 @media (max-width: 700px) {
   .aboutMe__cont {
-    width: 350px;
+    width: 325px;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -684,7 +700,7 @@ body .cursor__ball circle {
     margin-bottom: 50px;
   }
   .aboutMe__cont__info {
-    width: 350px;
+    width: 325px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -827,7 +843,7 @@ body .cursor__ball circle {
     padding: 150px 0;
   }
   .devMagic__cont {
-    width: 400px;
+    width: 325px;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -839,7 +855,7 @@ body .cursor__ball circle {
     margin-top: 20px;
   }
   .devMagic__cont__info {
-    width: 350px;
+    width: 325px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -853,7 +869,7 @@ body .cursor__ball circle {
   .devMagic__cont__info p {
     width: 100%;
     margin-bottom: 10px;
-    font-size: 1rem;
+    font-size: 0.9rem;
   }
 }
 .code {
@@ -898,12 +914,12 @@ body .cursor__ball circle {
 }
 @media (max-width: 700px) {
   .code__cont {
-    width: 350px;
+    width: 325px;
   }
   .code__cont__text {
-    width: 350px;
-    font-size: 1.2rem;
-    line-height: 20px;
+    width: 325px;
+    font-size: 1rem;
+    line-height: 16px;
   }
 }
 .showcase {
@@ -1023,11 +1039,11 @@ body .cursor__ball circle {
 }
 @media (max-width: 700px) {
   .showcase__cont {
-    width: 300px;
+    width: 325px;
     margin: 100px auto;
   }
   .showcase__cont h2 {
-    font-size: 2rem;
+    font-size: 1.8rem;
     font-weight: 900;
   }
   .showcase__cont__cards {
@@ -1043,7 +1059,7 @@ body .cursor__ball circle {
     margin-bottom: 100px;
   }
   .showcase__cont__cards__card__img {
-    width: 100%;
+    width: 300px;
     height: 200px;
     margin-bottom: 20px;
   }
@@ -1051,7 +1067,7 @@ body .cursor__ball circle {
     width: 100%;
   }
   .showcase__cont__cards__card__info p {
-    font-size: 0.7rem;
+    font-size: 0.5rem;
   }
 }
 .messageMe {
@@ -1061,7 +1077,7 @@ body .cursor__ball circle {
 }
 .messageMe__topSmoke {
   position: absolute;
-  top: 0px;
+  top: -10px;
   width: 100%;
   z-index: 5;
 }
@@ -1139,13 +1155,13 @@ body .cursor__ball circle {
     margin-bottom: -10px;
   }
   .messageMe__cont {
-    width: 350px;
+    width: 325px;
   }
   .messageMe__cont h2 {
-    font-size: 1.5rem;
+    font-size: 1rem;
   }
   .messageMe__cont span {
-    font-size: 1.5rem;
+    font-size: 1rem;
   }
 }
 .footer {

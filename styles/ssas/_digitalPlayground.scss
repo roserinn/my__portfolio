@@ -76,14 +76,15 @@
 @include mobile() {
 
   .digitalPlayground {
-
+    padding: 100px 0;
+height: 100vh;
     &__topSmoke {
       height: 100px;
       width: 100%;
     }
 
     &__cont {
-      width: 350px;
+      width: 325px;
 
       &__text {
         font-size: 1.1rem;

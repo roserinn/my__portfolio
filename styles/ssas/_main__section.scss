@@ -90,6 +90,9 @@
     margin: 0 auto;
     display: flex;
     flex-direction: column;
+    position: absolute;
+    top: 0;
+    left: 0;
 
     &__title {
       font-family: "Playfair Display", serif;
@@ -284,7 +287,7 @@
         font-size: 1.1rem;
         letter-spacing: .2rem;
         bottom: 1000px;
-        right: 32%;
+        right: 100px;
         text-align: center;
       }
     }
@@ -298,7 +301,6 @@
       object-fit: cover;
     }
   
-
     &__layerRight {
       top: -144px;
       left: -246px;
@@ -306,7 +308,7 @@
 
     &__layerLeft {
       bottom: 1224px;
-      right: -360px;
+      right: -373px;
     }
 
     &__cloudRight {
@@ -315,8 +317,8 @@
     }
 
     &__cloudLeft {
-      bottom: 790px;
-      right: -638px;
+      bottom: 744px;
+      right: -622px;
     }
 
 
@@ -332,19 +334,19 @@
 
     &__toplayerfirst {
       top: 84px;
-      left: 561px;
+      left: 270px;
       width: 100px;
       height: 100px;
     }
 
     &__bottomlayerfirst {
-      bottom: 1467px;
-      left: 32px;
+      bottom: 1428px;
+      left: -21px;
     }
 
     &__bottomlayersecond {
-      bottom: 1501px;
-      right: 9px;
+      bottom: 1478px;
+      right: -79px;
     }
 
     &__bottomlayerthird {
@@ -356,21 +358,25 @@
     }
 
     &__cont {
-      width: 350px;
+      width: 325px;
 
       &__title {
-        font-size: 3.5rem;
-        line-height: 60px;
-        top: -551px;
-        left: 33px;
+        font-size: 2.8rem;
+        font-weight: bold;
+        letter-spacing: 0;
+        line-height: 50px;
+        top: -496px;
+        left: 48px;
+      
       }
 
       &__subtitle {
-        font-size: 1rem;
-        bottom: 1081px;
-        right: 84px;
+        font-size: 0.9rem;
+        bottom: 1000px;
+        right: 59px;
+        letter-spacing: 0;
+        line-height: 20px;
       }
     }
-
   }
 }
