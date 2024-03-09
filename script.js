@@ -1,4 +1,47 @@
+function loader(_success) {
+  const obj = document.querySelector('.preloader'),
+      inner = document.querySelector('.preloader_inner'),
+      page = document.querySelector('.page'),
+      body = document.body;
 
+  body.style.overflow = 'hidden';
+
+  obj.classList.add('show');
+  page.classList.remove('show');
+  let w = 0;
+  let t = setInterval(function() {
+    if (w < 100) {
+      w++;
+      inner.textContent = w + '%';
+    } else {
+      clearInterval(t);
+      setTimeout(function() {
+        obj.classList.remove('show');
+      }, 1000); 
+      page.classList.add('show');
+
+      body.style.overflow = '';
+      if (_success) _success();
+    }
+
+    if (w >= 80) {
+      clearInterval(t);
+      t = setInterval(function() {
+        if (w < 100) {
+          w++;
+          inner.textContent = w + '%';
+        } else {
+          clearInterval(t);
+            obj.classList.remove('show');
+          body.style.overflow = '';
+          if (_success) _success();
+        }
+      }, 130); 
+    }
+  }, 40); 
+}
+
+loader();
 
 const container = document.querySelector('.center');
 
@@ -167,17 +210,17 @@ function animateElements(selector, options = {}) {
   gsap.from(selector, { ...options, ease: "back" }); 
 }
 
-animateElements(".mainSection__bg", { delay: 4.6, opacity: 0, duration: 1 });
-animateElements(".mainSection__layerRight", {delay: 4.8, x: -300, duration: 2 });
-animateElements(".mainSection__layerLeft", {delay: 4.8, x: 300, duration: 2 });
-animateElements(".mainSection__toplayerthird", { delay: 5, y: -300, duration: 2 });
-animateElements(".mainSection__bottomlayerthird", { delay: 5, y: 300, duration: 2 });
-animateElements(".mainSection__cloudRight", { delay: 5.5, x: -300, duration: 2 });
-animateElements(".mainSection__cloudLeft", { delay: 5.5, x: 300, duration: 2 });
-animateElements(".sixth", { delay: 5.6, opacity: 0, duration: 2, stagger: 0.2 });
-animateElements(".mainSection__cont__title", { delay: 7, opacity: 0, duration: 2.5, x: 300 });
-animateElements(".mainSection__cont__subtitle", { delay: 7, opacity: 0, duration: 2.5, x: -300 });
-animateElements(".header__cont", { delay: 7.6, opacity: 0, duration: 2, y: -50, });
+animateElements(".mainSection__bg", { delay: 6.6, opacity: 0, duration: 1 });
+animateElements(".mainSection__layerRight", {delay: 6.8, x: -300, duration: 2 });
+animateElements(".mainSection__layerLeft", {delay: 6.8, x: 300, duration: 2 });
+animateElements(".mainSection__toplayerthird", { delay: 7, y: -300, duration: 2 });
+animateElements(".mainSection__bottomlayerthird", { delay: 7, y: 300, duration: 2 });
+animateElements(".mainSection__cloudRight", { delay: 7.5, x: -300, duration: 2 });
+animateElements(".mainSection__cloudLeft", { delay: 7.5, x: 300, duration: 2 });
+animateElements(".sixth", { delay: 7.6, opacity: 0, duration: 2, stagger: 0.2 });
+animateElements(".mainSection__cont__title", { delay: 9, opacity: 0, duration: 2.5, x: 300 });
+animateElements(".mainSection__cont__subtitle", { delay: 9, opacity: 0, duration: 2.5, x: -300 });
+animateElements(".header__cont", { delay: 9.6, opacity: 0, duration: 2, y: -50, });
 
 //about me section 
 ScrollTrigger.create({

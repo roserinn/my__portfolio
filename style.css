@@ -332,8 +332,8 @@ body .cursor__ball circle {
   line-height: 120px;
   text-shadow: 0 0 10px rgba(255, 255, 255, 0.0745098039), 0 0 20px rgba(255, 255, 255, 0.1098039216), 0 0 30px rgba(255, 255, 255, 0.2941176471), 0 0 40px rgba(255, 255, 255, 0.2941176471), 0 0 70px rgba(255, 255, 255, 0.2941176471), 0 0 80px rgba(255, 255, 255, 0.2941176471), 0 0 100px rgba(255, 255, 255, 0.2941176471), 0 0 150px rgba(255, 255, 255, 0.2941176471);
   position: absolute;
-  top: -556px;
-  left: 200px;
+  top: 150px;
+  left: 150px;
 }
 .mainSection__cont__subtitle {
   font-weight: 300;
@@ -343,13 +343,13 @@ body .cursor__ball circle {
   display: flex;
   text-shadow: 0 0 10px rgba(255, 255, 255, 0.0745098039), 0 0 20px rgba(255, 255, 255, 0.1098039216), 0 0 30px rgba(255, 255, 255, 0.2941176471);
   position: absolute;
-  bottom: 928px;
-  right: 332px;
+  bottom: 150px;
+  right: 150px;
 }
 .mainSection .scene {
   width: 100%;
   height: 100%;
-  position: relative;
+  position: absolute;
 }
 .mainSection .scene .layer {
   width: 100%;

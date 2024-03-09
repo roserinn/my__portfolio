@@ -103,8 +103,8 @@
       line-height: 120px;
       text-shadow: 0 0 10px #ffffff13, 0 0 20px #ffffff1c, 0 0 30px #ffffff4b, 0 0 40px #ffffff4b, 0 0 70px #ffffff4b, 0 0 80px #ffffff4b, 0 0 100px #ffffff4b, 0 0 150px #ffffff4b;
       position: absolute;
-      top: -556px;
-      left: 200px;
+      top: 150px;
+      left: 150px;
     }
 
     &__subtitle {
@@ -115,15 +115,15 @@
       display: flex;
       text-shadow: 0 0 10px #ffffff13, 0 0 20px #ffffff1c, 0 0 30px #ffffff4b;
       position: absolute;
-      bottom: 928px;
-      right: 332px;
+      bottom: 150px;
+      right: 150px;
     }
   }
 
   .scene {
     width: 100%;
     height: 100%;
-    position: relative;
+    position: absolute;
 
     .layer {
       width: 100%;
