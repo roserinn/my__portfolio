@@ -252,40 +252,40 @@ body .cursor__ball circle {
 }
 .mainSection__layerRight {
   position: absolute;
-  top: -192px;
-  left: -246px;
+  top: -157px;
+  left: -319px;
 }
 .mainSection__layerLeft {
   position: absolute;
-  bottom: 1224px;
-  right: -246px;
+  bottom: 0px;
+  right: -364px;
 }
 .mainSection__cloudRight {
   position: absolute;
-  bottom: -791px;
-  right: 1164px;
+  bottom: -786px;
+  right: -671px;
 }
 .mainSection__cloudLeft {
   position: absolute;
-  bottom: 781px;
-  right: -600px;
+  bottom: -134px;
+  left: -654px;
 }
 .mainSection__toplayerthird {
   position: absolute;
   height: 694px;
   width: 2000px;
-  top: -409px;
-  left: -50px;
+  top: -396px;
+  left: 0px;
 }
 .mainSection__toplayersecond {
   position: absolute;
-  top: -60px;
-  left: 15px;
+  top: 0px;
+  left: 21px;
 }
 .mainSection__toplayerfirst {
   position: absolute;
-  top: 52px;
-  right: 179px;
+  top: 63px;
+  right: 6px;
 }
 .mainSection__bottomSmoke {
   position: absolute;
@@ -298,21 +298,21 @@ body .cursor__ball circle {
 .mainSection__bottomlayerfirst {
   width: 150px;
   position: absolute;
-  bottom: 1600px;
-  left: 50px;
+  bottom: 100px;
+  left: 90px;
 }
 .mainSection__bottomlayersecond {
   position: absolute;
-  bottom: 1430px;
-  right: 9px;
+  bottom: -230px;
+  right: -40px;
   width: 400px;
   height: 400px;
 }
 .mainSection__bottomlayerthird {
   position: absolute;
   height: 600px;
-  top: -1060px;
-  right: -25px;
+  bottom: -265px;
+  right: -43px;
   width: 2000px;
 }
 .mainSection__cont {
@@ -332,8 +332,8 @@ body .cursor__ball circle {
   line-height: 120px;
   text-shadow: 0 0 10px rgba(255, 255, 255, 0.0745098039), 0 0 20px rgba(255, 255, 255, 0.1098039216), 0 0 30px rgba(255, 255, 255, 0.2941176471), 0 0 40px rgba(255, 255, 255, 0.2941176471), 0 0 70px rgba(255, 255, 255, 0.2941176471), 0 0 80px rgba(255, 255, 255, 0.2941176471), 0 0 100px rgba(255, 255, 255, 0.2941176471), 0 0 150px rgba(255, 255, 255, 0.2941176471);
   position: absolute;
-  top: 150px;
-  left: 150px;
+  top: 25%;
+  left: 10%;
 }
 .mainSection__cont__subtitle {
   font-weight: 300;
@@ -343,8 +343,8 @@ body .cursor__ball circle {
   display: flex;
   text-shadow: 0 0 10px rgba(255, 255, 255, 0.0745098039), 0 0 20px rgba(255, 255, 255, 0.1098039216), 0 0 30px rgba(255, 255, 255, 0.2941176471);
   position: absolute;
-  bottom: 150px;
-  right: 150px;
+  bottom: 25%;
+  right: 15%;
 }
 .mainSection .scene {
   width: 100%;
