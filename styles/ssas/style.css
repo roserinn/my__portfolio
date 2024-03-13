@@ -242,9 +242,9 @@ body .cursor__ball circle {
 
 .mainSection {
   position: relative;
-  height: 100vh;
   overflow: hidden;
   color: #FFFFFF;
+  height: 100vh;
 }
 .mainSection__bg {
   width: 100%;
@@ -252,23 +252,23 @@ body .cursor__ball circle {
 }
 .mainSection__layerRight {
   position: absolute;
-  top: -157px;
-  left: -319px;
+  top: -492px;
+  left: -279px;
 }
 .mainSection__layerLeft {
   position: absolute;
   bottom: 0px;
-  right: -364px;
+  right: -204px;
 }
 .mainSection__cloudRight {
   position: absolute;
-  bottom: -786px;
-  right: -671px;
+  bottom: -701px;
+  left: -480px;
 }
 .mainSection__cloudLeft {
   position: absolute;
-  bottom: -134px;
-  left: -654px;
+  bottom: -699px;
+  right: -624px;
 }
 .mainSection__toplayerthird {
   position: absolute;
@@ -284,7 +284,7 @@ body .cursor__ball circle {
 }
 .mainSection__toplayerfirst {
   position: absolute;
-  top: 63px;
+  top: 85px;
   right: 6px;
 }
 .mainSection__bottomSmoke {
@@ -298,13 +298,13 @@ body .cursor__ball circle {
 .mainSection__bottomlayerfirst {
   width: 150px;
   position: absolute;
-  bottom: 100px;
-  left: 90px;
+  bottom: 87px;
+  left: 211px;
 }
 .mainSection__bottomlayersecond {
   position: absolute;
-  bottom: -230px;
-  right: -40px;
+  bottom: -84px;
+  right: -133px;
   width: 400px;
   height: 400px;
 }
@@ -359,113 +359,114 @@ body .cursor__ball circle {
 @media (max-width: 1264px) {
   .mainSection__layerRight {
     top: -144px;
-    left: -246px;
+    left: 844px;
   }
   .mainSection__layerLeft {
-    bottom: 1224px;
-    right: -273px;
+    bottom: -152px;
+    right: 989px;
   }
   .mainSection__cloudRight {
     position: absolute;
-    bottom: -248px;
-    right: 886px;
+    bottom: -201px;
+    left: -608px;
   }
   .mainSection__cloudLeft {
-    bottom: 781px;
-    right: -567px;
+    bottom: -878px;
+    left: 849px;
   }
   .mainSection__toplayerthird {
-    top: -409px;
-    left: -50px;
+    top: -365px;
+    left: -169px;
   }
   .mainSection__toplayersecond {
-    top: -96px;
-    left: -17px;
+    top: -47px;
+    left: -38px;
   }
   .mainSection__toplayerfirst {
     position: absolute;
-    top: 62px;
-    right: 81px;
+    top: -47px;
+    right: -14px;
   }
   .mainSection__bottomlayerfirst {
-    bottom: 1508px;
+    bottom: 85px;
     left: 130px;
   }
   .mainSection__bottomlayersecond {
     width: 200px;
     height: 200px;
-    bottom: 1430px;
+    bottom: 0px;
     right: 9px;
   }
   .mainSection__bottomlayerthird {
     position: absolute;
     height: 600px;
-    top: -996px;
-    right: -261px;
+    top: 433px;
+    right: -197px;
     width: 2000px;
   }
   .mainSection__cont {
     width: 1200px;
   }
   .mainSection__cont__title {
-    font-size: 6rem;
-    top: -587px;
+    font-size: 5.8rem;
+    top: 169px;
     left: 156px;
   }
   .mainSection__cont__subtitle {
     font-size: 1.2rem;
     letter-spacing: 0.2rem;
-    bottom: 974px;
-    right: 154px;
+    bottom: 164px;
+    right: 239px;
   }
 }
 @media (max-width: 1000px) {
+  .mainSection {
+    height: 750px;
+  }
   .mainSection__layerRight {
-    top: -144px;
-    left: -246px;
+    top: -48px;
+    left: 760px;
   }
   .mainSection__layerLeft {
-    bottom: 1224px;
-    right: -273px;
+    left: -718px;
+    top: -458px;
   }
   .mainSection__cloudRight {
-    position: absolute;
-    bottom: -172px;
-    right: 645px;
+    bottom: -188px;
+    left: 219px;
   }
   .mainSection__cloudLeft {
-    bottom: 790px;
-    right: -571px;
+    bottom: -772px;
+    left: -392px;
   }
   .mainSection__toplayerthird {
-    top: -385px;
-    left: -250px;
+    top: -370px;
+    left: -38px;
   }
   .mainSection__toplayersecond {
-    top: -52px;
-    left: -68px;
+    top: -47px;
+    left: -38px;
   }
   .mainSection__toplayerfirst {
-    top: 84px;
-    left: 561px;
-    width: 100px;
-    height: 100px;
+    position: absolute;
+    top: -47px;
+    right: -14px;
   }
   .mainSection__bottomlayerfirst {
-    bottom: 1508px;
+    bottom: 85px;
     left: 130px;
   }
   .mainSection__bottomlayersecond {
     width: 200px;
     height: 200px;
-    bottom: 1430px;
+    bottom: 0px;
     right: 9px;
   }
   .mainSection__bottomlayerthird {
     position: absolute;
     height: 600px;
-    top: -996px;
-    right: -261px;
+    top: 326px;
+    right: -54px;
     width: 2000px;
   }
   .mainSection__cont {
@@ -473,86 +474,98 @@ body .cursor__ball circle {
   }
   .mainSection__cont__title {
     font-size: 5rem;
-    line-height: 80px;
-    top: -545px;
-    left: 105px;
+    top: 99px;
+    left: 98px;
     text-align: center;
   }
   .mainSection__cont__subtitle {
-    font-size: 1.1rem;
+    font-size: 1rem;
     letter-spacing: 0.2rem;
-    bottom: 1000px;
-    right: 100px;
+    bottom: 300px;
+    right: 222px;
     text-align: center;
   }
 }
 @media (max-width: 700px) {
+  .mainSection {
+    height: 600px;
+  }
   .mainSection__bg {
     -o-object-fit: cover;
        object-fit: cover;
   }
   .mainSection__layerRight {
-    top: -144px;
-    left: -246px;
+    top: -246px;
+    left: -307px;
   }
   .mainSection__layerLeft {
-    bottom: 1224px;
-    right: -373px;
+    left: 292px;
+    top: -26px;
   }
   .mainSection__cloudRight {
-    bottom: -172px;
-    right: 255px;
-  }
-  .mainSection__cloudLeft {
-    bottom: 744px;
-    right: -622px;
-  }
-  .mainSection__toplayerthird {
-    top: -385px;
-    left: -250px;
-  }
-  .mainSection__toplayersecond {
-    top: -52px;
+    bottom: -204px;
     left: -68px;
   }
+  .mainSection__cloudLeft {
+    bottom: -892px;
+    left: -460px;
+  }
+  .mainSection__toplayerthird {
+    top: -428px;
+    left: -621px;
+  }
+  .mainSection__toplayersecond {
+    top: 14px;
+    left: 0px;
+    width: 100px;
+    height: 100px;
+  }
   .mainSection__toplayerfirst {
-    top: 84px;
-    left: 270px;
+    position: absolute;
+    top: -3px;
+    right: 53px;
     width: 100px;
     height: 100px;
   }
   .mainSection__bottomlayerfirst {
-    bottom: 1428px;
-    left: -21px;
+    bottom: 85px;
+    left: 52px;
+    width: 100px;
+    height: 100px;
   }
   .mainSection__bottomlayersecond {
-    bottom: 1478px;
-    right: -79px;
+    width: 200px;
+    height: 200px;
+    bottom: 48px;
+    right: 56px;
+    width: 100px;
+    height: 100px;
   }
   .mainSection__bottomlayerthird {
     position: absolute;
     height: 600px;
-    top: -1043px;
-    right: -261px;
+    top: 314px;
+    left: -677px;
     width: 2000px;
   }
   .mainSection__cont {
-    width: 325px;
+    width: 350px;
   }
   .mainSection__cont__title {
-    font-size: 2.8rem;
-    font-weight: bold;
-    letter-spacing: 0;
-    line-height: 50px;
-    top: -496px;
-    left: 48px;
+    line-height: 40px;
+    font-size: 2.7rem;
+    top: 136px;
+    left: 40px;
+    text-align: center;
   }
   .mainSection__cont__subtitle {
-    font-size: 0.9rem;
-    bottom: 1000px;
-    right: 59px;
-    letter-spacing: 0;
-    line-height: 20px;
+    width: 80%;
+    font-size: 1rem;
+    letter-spacing: 0rem;
+    line-height: 16px;
+    bottom: 286px;
+    right: 39px;
+    text-align: center;
   }
 }
 .digitalPlayground {
@@ -641,11 +654,11 @@ body .cursor__ball circle {
   width: 400px;
 }
 .aboutMe__cont__info {
-  width: 520px;
+  width: 550px;
 }
 .aboutMe__cont__info h2 {
   font-family: "Playfair Display", serif;
-  font-size: 3.5rem;
+  font-size: 2.5rem;
   font-weight: 900;
   letter-spacing: 0.1rem;
   margin-bottom: 40px;

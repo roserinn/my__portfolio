@@ -1,37 +1,36 @@
 .mainSection {
   position: relative;
-  height: 100vh;
-
   overflow: hidden;
   color: $white;
+  height: 100vh;
 
   &__bg {
     width: 100%;
-    height: 100%; 
+    height: 100%;
   }
 
   &__layerRight {
     position: absolute;
-    top: -157px;
-    left: -319px;
+    top: -492px;
+    left: -279px;
   }
 
-  &__layerLeft { 
+  &__layerLeft {
     position: absolute;
     bottom: 0px;
-    right: -364px;
+    right: -204px;
   }
 
   &__cloudRight {
     position: absolute;
-    bottom: -786px;
-    right: -671px;
+    bottom: -701px;
+    left: -480px;
   }
 
   &__cloudLeft {
     position: absolute;
-    bottom: -134px;
-    left: -654px;
+    bottom: -699px;
+    right: -624px;
   }
 
   &__toplayerthird {
@@ -50,7 +49,7 @@
 
   &__toplayerfirst {
     position: absolute;
-    top: 63px;
+    top: 85px;
     right: 6px;
   }
 
@@ -66,14 +65,14 @@
   &__bottomlayerfirst {
     width: 150px;
     position: absolute;
-    bottom: 100px;
-    left: 90px;
+    bottom: 87px;
+    left: 211px;
   }
 
   &__bottomlayersecond {
     position: absolute;
-    bottom: -230px;
-    right: -40px;
+    bottom: -84px;
+    right: -133px;
     width: 400px;
     height: 400px;
   }
@@ -137,58 +136,58 @@
   .mainSection {
     &__layerRight {
       top: -144px;
-      left: -246px;
+      left: 844px;
     }
 
     &__layerLeft {
-      bottom: 1224px;
-      right: -273px;
+      bottom: -152px;
+      right: 989px;
     }
 
     &__cloudRight {
       position: absolute;
-      bottom: -248px;
-      right: 886px;
+      bottom: -201px;
+      left: -608px;
     }
 
     &__cloudLeft {
-      bottom: 781px;
-      right: -567px;
+      bottom: -878px;
+      left: 849px;
     }
 
     &__toplayerthird {
-      top: -409px;
-      left: -50px;
+      top: -365px;
+      left: -169px;
     }
 
     &__toplayersecond {
-      top: -96px;
-      left: -17px;
+      top: -47px;
+      left: -38px;
     }
 
     &__toplayerfirst {
       position: absolute;
-      top: 62px;
-      right: 81px;
+      top: -47px;
+      right: -14px;
     }
 
     &__bottomlayerfirst {
-      bottom: 1508px;
+      bottom: 85px;
       left: 130px;
     }
 
     &__bottomlayersecond {
       width: 200px;
       height: 200px;
-      bottom: 1430px;
+      bottom: 0px;
       right: 9px;
     }
 
     &__bottomlayerthird {
       position: absolute;
       height: 600px;
-      top: -996px;
-      right: -261px;
+      top: 433px;
+      right: -197px;
       width: 2000px;
     }
 
@@ -196,16 +195,16 @@
       width: 1200px;
 
       &__title {
-        font-size: 6rem;
-        top: -587px;
+        font-size: 5.8rem;
+        top: 169px;
         left: 156px;
       }
 
       &__subtitle {
         font-size: 1.2rem;
         letter-spacing: .2rem;
-        bottom: 974px;
-        right: 154px;
+        bottom: 164px;
+        right: 239px;
       }
     }
 
@@ -214,81 +213,79 @@
 
 @include tablet() {
   .mainSection {
+    height: 750px;
     &__layerRight {
-      top: -144px;
-      left: -246px;
+      top: -48px;
+      left: 760px;
     }
 
     &__layerLeft {
-      bottom: 1224px;
-      right: -273px;
+      left: -718px;
+      top: -458px;
     }
 
     &__cloudRight {
-      position: absolute;
-      bottom: -172px;
-      right: 645px;
+      bottom: -188px;
+      left: 219px;
     }
 
     &__cloudLeft {
-      bottom: 790px;
-      right: -571px;
+      bottom: -772px;
+      left: -392px;
     }
 
-
     &__toplayerthird {
-      top: -385px;
-      left: -250px;
+      top: -370px;
+      left: -38px;
     }
 
     &__toplayersecond {
-      top: -52px;
-      left: -68px;
+      top: -47px;
+      left: -38px;
     }
 
     &__toplayerfirst {
-      top: 84px;
-      left: 561px;
-      width: 100px;
-      height: 100px;
+      position: absolute;
+      top: -47px;
+      right: -14px;
     }
 
     &__bottomlayerfirst {
-      bottom: 1508px;
+      bottom: 85px;
       left: 130px;
     }
 
     &__bottomlayersecond {
       width: 200px;
       height: 200px;
-      bottom: 1430px;
+      bottom: 0px;
       right: 9px;
     }
 
     &__bottomlayerthird {
       position: absolute;
       height: 600px;
-      top: -996px;
-      right: -261px;
+      top: 326px;
+      right: -54px;
       width: 2000px;
     }
 
     &__cont {
       width: 700px;
 
+
       &__title {
         font-size: 5rem;
-        line-height: 80px;
-        top: -545px;
-        left: 105px;
+        top: 99px;
+        left: 98px;
         text-align: center;
       }
 
       &__subtitle {
-        font-size: 1.1rem;
+        font-size: 1rem;
         letter-spacing: .2rem;
-        bottom: 1000px;
-        right: 100px;
+        bottom: 300px;
+        right: 222px;
         text-align: center;
       }
     }
@@ -298,85 +295,95 @@
 
 @include mobile() {
   .mainSection {
+    height: 600px;
+
     &__bg {
       object-fit: cover;
     }
-  
+
     &__layerRight {
-      top: -144px;
-      left: -246px;
+      top: -246px;
+      left: -307px;
     }
 
     &__layerLeft {
-      bottom: 1224px;
-      right: -373px;
+      left: 292px;
+      top: -26px;
     }
 
     &__cloudRight {
-      bottom: -172px;
-      right: 255px;
-    }
-
-    &__cloudLeft {
-      bottom: 744px;
-      right: -622px;
-    }
-
-
-    &__toplayerthird {
-      top: -385px;
-      left: -250px;
-    }
-
-    &__toplayersecond {
-      top: -52px;
+      bottom: -204px;
       left: -68px;
     }
 
+    &__cloudLeft {
+      bottom: -892px;
+      left: -460px;
+    }
+
+    &__toplayerthird {
+      top: -428px;
+      left: -621px;
+    }
+
+    &__toplayersecond {
+      top: 14px;
+      left: 0px;
+      width: 100px;
+      height: 100px;
+    }
+
     &__toplayerfirst {
-      top: 84px;
-      left: 270px;
+      position: absolute;
+      top: -3px;
+      right: 53px;
       width: 100px;
       height: 100px;
     }
 
     &__bottomlayerfirst {
-      bottom: 1428px;
-      left: -21px;
+      bottom: 85px;
+      left: 52px;
+      width: 100px;
+      height: 100px;
     }
 
     &__bottomlayersecond {
-      bottom: 1478px;
-      right: -79px;
+      width: 200px;
+      height: 200px;
+      bottom: 48px;
+      right: 56px;
+      width: 100px;
+      height: 100px;
     }
 
     &__bottomlayerthird {
       position: absolute;
       height: 600px;
-      top: -1043px;
-      right: -261px;
+      top: 314px;
+      left: -677px;
       width: 2000px;
     }
 
     &__cont {
-      width: 325px;
+      width: 350px;
 
       &__title {
-        font-size: 2.8rem;
-        font-weight: bold;
-        letter-spacing: 0;
-        line-height: 50px;
-        top: -496px;
-        left: 48px;
-      
+        line-height: 40px;
+        font-size: 2.7rem;
+        top: 136px;
+        left: 40px;
+        text-align: center;
       }
 
       &__subtitle {
-        font-size: 0.9rem;
-        bottom: 1000px;
-        right: 59px;
-        letter-spacing: 0;
-        line-height: 20px;
+        width: 80%;
+        font-size: 1rem;
+        letter-spacing: 0rem;
+        line-height: 16px;
+        bottom: 286px;
+        right: 39px;
+        text-align: center;
       }
     }
   }

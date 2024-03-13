@@ -211,12 +211,12 @@ function animateElements(selector, options = {}) {
 }
 
 animateElements(".mainSection__bg", { delay: 6.6, opacity: 0, duration: 1 });
-animateElements(".mainSection__layerRight", {delay: 6.8, x: -300, duration: 2 });
-animateElements(".mainSection__layerLeft", {delay: 6.8, x: 300, duration: 2 });
-animateElements(".mainSection__toplayerthird", { delay: 7, y: -300, duration: 2 });
-animateElements(".mainSection__bottomlayerthird", { delay: 7, y: 300, duration: 2 });
-animateElements(".mainSection__cloudRight", { delay: 7.5, x: -300, duration: 2 });
-animateElements(".mainSection__cloudLeft", { delay: 7.5, x: 300, duration: 2 });
+animateElements(".mainSection__layerRight", {delay: 6.8, opacity: 0, x: -300, duration: 2 });
+animateElements(".mainSection__layerLeft", {delay: 6.8, opacity: 0, x: 300, duration: 2 });
+animateElements(".mainSection__toplayerthird", { delay: 7, opacity: 0, y: -300, duration: 2 });
+animateElements(".mainSection__bottomlayerthird", { delay: 7, opacity: 0, y: 300, duration: 2 });
+animateElements(".mainSection__cloudRight", { delay: 7.5, opacity: 0, x: 300, duration: 2 });
+animateElements(".mainSection__cloudLeft", { delay: 7.5, opacity: 0, x: -300, duration: 2 });
 animateElements(".sixth", { delay: 7.6, opacity: 0, duration: 2, stagger: 0.2 });
 animateElements(".mainSection__cont__title", { delay: 9, opacity: 0, duration: 2.5, x: 300 });
 animateElements(".mainSection__cont__subtitle", { delay: 9, opacity: 0, duration: 2.5, x: -300 });
@@ -344,7 +344,7 @@ document.querySelector('.header__cont__lang__en').addEventListener('click', () =
 
 const ua = {
   mainSectionTitle: 'Гармонія коду <br> та дизайну',
-  mainSectionSubtitle: 'Зустрічайте майстра кодування, <br> який перетворює каву на чудові веб-сайти',
+  mainSectionSubtitle: 'Зустрічайте майстра кодування, який перетворює каву на чудові веб-сайти',
   aboutMeTitle: 'Трохи Байтів про Мене',
   aboutMeFirstSentence: 'Я Ріна, веб-майстер, який працює у високому темпі! Моя пристрасть полягає у створенні захоплюючих веб-сайтів за допомогою майстерності програмування.',
   aboutMeSecondSentence: 'Глибоко занурена у світ цифрових технологій, я не маю більшого задоволення, ніж виходити за межі звичного синтаксису і створювати приголомшливі результати.',
@@ -363,7 +363,7 @@ const ua = {
 
 const en = {
   mainSectionTitle: 'Harmony of <br> Code and Design',
-  mainSectionSubtitle: 'Meet the coding wizard who turns<br> coffee into great websites',
+  mainSectionSubtitle: 'Meet the coding wizard who turns coffee into great websites',
   aboutMeTitle: 'A Little Byte about Me ',
   aboutMeFirstSentence: "I'm Rina, a web wizard who works at a high pace! My passion lies in creating mesmerizing websites through the wizardry of programming",
   aboutMeSecondSentence: 'Deeply immersed in the world of digital technology, I have no greater pleasure than to go beyond the usual syntax and produce stunning results.',
