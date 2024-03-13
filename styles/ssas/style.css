@@ -336,6 +336,7 @@ body .cursor__ball circle {
   left: 10%;
 }
 .mainSection__cont__subtitle {
+  width: 380px;
   font-weight: 300;
   font-size: 1.2rem;
   letter-spacing: 0.2rem;
@@ -488,7 +489,7 @@ body .cursor__ball circle {
 }
 @media (max-width: 700px) {
   .mainSection {
-    height: 600px;
+    height: 650px;
   }
   .mainSection__bg {
     -o-object-fit: cover;
