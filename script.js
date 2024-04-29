@@ -87,6 +87,14 @@ const cardsArray = [
     cardLink: 'https://upstate.pages.dev/'
   },
   {
+    cardImg: './img/slider/framerrr.png',
+    cardTitle: 'FRAMER',
+    cardText: 'Manage tasks easier with this platform.',
+    cardTextUa: 'Керуйте завданнями простіше з цією платформою.',
+    buttonTextUa: 'Перейти',
+    cardLink: 'https://framerrr.pages.dev/'
+  },
+  {
     cardImg: './img/slider/wildsouls.webp',
     cardTitle: 'WILD SOULS',
     cardText: 'Discover wholesome nutrition essentials at this online store, empowering your wellness journey.',
@@ -106,10 +114,11 @@ const cardsArray = [
     cardImg: './img/slider/cake.webp',
     cardTitle: 'PASTRY COURSE',
     cardText: 'Take your baking skills to the next level with this beautyfull comprehensive online pastry courses.',
-    cardTextUa: 'Підніміть свої навички випічки на новий рівень за допомогою цього чудового комплексного онлайн-курсу з кондитерської справи".',
+    cardTextUa: 'Підніміть свої навички випічки на новий рівень за допомогою цього чудового комплексного онлайн-курсу з кондитерської справи.',
     buttonTextUa: 'Перейти',
     cardLink: 'https://pastry-course.pages.dev/'
   },
+
 ];
 
 
