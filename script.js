@@ -89,8 +89,8 @@ const cardsArray = [
   {
     cardImg: './img/slider/framerrr.png',
     cardTitle: 'FRAMER',
-    cardText: 'Manage tasks easier with this platform.',
-    cardTextUa: 'Керуйте завданнями простіше з цією платформою.',
+    cardText: 'Manage tasks efficiently with this site for task management, organization tracking and task completion ',
+    cardTextUa: 'Керуйте завданнями ефективно з цим сайтом для таск-менеджменту, організація відстеження та виконання завдань ',
     buttonTextUa: 'Перейти',
     cardLink: 'https://framerrr.pages.dev/'
   },
