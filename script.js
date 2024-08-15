@@ -63,6 +63,14 @@ let language = languageStorage === "ua" ? "ua" : "en";
 //workShowcase 
 const cardsArray = [
   {
+    cardImg: './img/slider/mappitall.png',
+    cardTitle: 'MAPPITALL LANDING FOR REAL ESTATE',
+    cardText: "I developed this landing page while working at Mappitall. It is part of the company's main website.",
+    cardTextUa: 'Цей лендинг сторінку я розробила під час роботи в компанії Mappitall. Вона є частиною основного вебсайту компанії.',
+    buttonTextUa: 'Перейти',
+    cardLink: 'https://mappitall.pages.dev/'
+  },
+  {
     cardImg: './img/slider/hypicons.webp',
     cardTitle: 'HYPICONS',
     cardText: 'Dive into icon pack sales website for a mesmerizing experience with neon colors and captivating animations.',
@@ -118,6 +126,7 @@ const cardsArray = [
     buttonTextUa: 'Перейти',
     cardLink: 'https://pastry-course.pages.dev/'
   },
+ 
 
 ];
 
